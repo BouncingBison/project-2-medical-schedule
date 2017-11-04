@@ -1,0 +1,286 @@
+/*-----------------INDEX---------------------*/
+
+
+/*** 1.0 BOX SIZING ***/
+
+
+/*** 2.0 COLOR ***/
+
+
+/*** 2.1 #006AB3 - Primary Blue ***/
+
+
+/*** 2.2 #132E40 - Indigo Background ***/
+
+
+/*** 2.3 #E8E8E8 - Light Gray ***/
+
+
+/*** 3.0 TEXT & FONTS ***/
+
+
+/*** 4.0 PAGE & TOP CONSTRUCTION ***/
+
+
+/*** 5.0 LOGIN PAGE ***/
+
+
+/*** 6.0 TABLE ***/
+
+
+/*** 7.0 FOOTER ***/
+
+
+/*** 8.0 MIKE'S CSS ***/
+
+
+/*------------------------------------------*/
+
+
+/*** 1.0 BOX SIZING ***/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* this keeps border and padding inside the box measurement */
+
+
+/*** 3.0 TEXT & FONTS ***/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+.header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    margin: 0px;
+    padding-left: 20px;
+    color: #E8E8E8;
+    /* Light Gray */
+}
+
+.header h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin: 0px;
+    padding-left: 20px;
+    color: #E8E8E8;
+    /* Light Gray */
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #E8E8E8;
+    /* Light Gray */
+}
+
+.footer-copy {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #E8E8E8;
+    /* Light Gray */
+    padding-top: 7px;
+}
+
+.info {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 0px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #FFBF8C;
+    /* Tuape */
+    margin-top: 10px;
+}
+
+.shift {
+    font-size: 18px;
+    text-align: center;
+    color: #006AB3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.oncall {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #8B0000;
+    /* Burgundy */
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.phone {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0px;
+}
+
+
+/*** 4.0 PAGE & HEADER CONSTRUCTION ***/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #132E40;
+    /* Indigo Background */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: 0px;
+    padding-top: 50px;
+    padding-left: 10px;
+    height: 225px;
+    display: block;
+    position: relative;
+}
+
+#schedule-header::after {
+    content: "";
+    background: url("../images/hospital_outside_cr.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+#patient-header::after {
+    content: "";
+    background: url("../images/hospital_room_cr.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#nurses-header::after {
+    content: "";
+    background: url("../images/hospital_station_cr.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.logout {
+    margin-right: 15px;
+}
+
+.min-height {
+    min-height: 340px;
+}
+
+
+/*** 5.0 LOGIN PAGE ***/
+
+#login {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+a:link.mailto {
+    color: #E8E8E8;
+}
+
+.img-background {
+    background-color: #E8E8E8 !important;
+}
+
+
+/*** 7.0 FOOTER ***/
+
+footer {
+    background-color: #080808;
+    height: 50px;
+    text-align: center;
+}
+
+
+/*** 8.0 MIKE'S CSS ***/
+
+.todo-list {
+    margin-top: 75px;
+}
+
+.list-group-item {
+    height: 50px;
+    line-height: 2;
+}
+
+input.new-item {
+    width: 75%;
+    height: 35px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.list-group-item.new-item {
+    height: 100px;
+}
+
+input.new-item:focus {
+    outline: none;
+}
+
+.list-group-item>button.delete {
+    float: right;
+    height: 25px;
+    margin-top: 3px;
+    line-height: 0.5;
+}
+
+.edit {
+    width: 100%;
+}
